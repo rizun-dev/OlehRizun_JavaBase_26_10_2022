@@ -2,5 +2,9 @@ package HillelRizunDz5;
 
 public class ArmyPower {
 
-fdsfdsfdsfdsfdsfds
+fjsodfnskdf;
+
+    public static void main(String[] args) {
+
+    }
 }
