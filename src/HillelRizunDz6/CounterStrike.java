@@ -5,23 +5,23 @@ public class CounterStrike {
 
         String teamName1 = "Liones";
 
-        int player1kills1 = 5;
-        int player1kills2 = 7;
-        int player1kills3 = 2;
-        int player1kills4 = 8;
-        int player1kills5 = 4;
+        int player1kills = 5;
+        int player2kills = 7;
+        int player3kills = 2;
+        int player4kills = 8;
+        int player5kills = 4;
 
-        int resultFirstTeam = (player1kills1 + player1kills2 + player1kills3 + player1kills4 + player1kills5)/5;
+        int resultFirstTeam = (player1kills + player2kills + player3kills + player4kills + player5kills)/5;
 
         String teamName2 = "Tigers";
 
-        int player1kills6 = 7;
-        int player1kills7 = 17;
-        int player1kills8 = 20;
-        int player1kills9 = 8;
-        int player1kills10 = 12;
+        int player6kills = 7;
+        int player7kills = 17;
+        int player8kills = 20;
+        int player9kills = 8;
+        int player10kills = 12;
 
-        int resultSecondTeam = (player1kills6 + player1kills7 + player1kills8 + player1kills9 + player1kills10)/5;
+        int resultSecondTeam = (player6kills + player7kills + player8kills + player9kills + player10kills)/5;
 
         boolean resultWin = (resultFirstTeam < resultSecondTeam);
 
