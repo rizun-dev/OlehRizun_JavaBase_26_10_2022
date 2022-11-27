@@ -1,6 +1,6 @@
 package HillelRizunDz6;
 
-public class Main {
+public class CounterStrike {
     public static void main(String[] args) {
 
     }
