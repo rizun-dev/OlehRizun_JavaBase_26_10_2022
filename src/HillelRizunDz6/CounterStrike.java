@@ -3,7 +3,7 @@ package HillelRizunDz6;
 public class CounterStrike {
     public static void main(String[] args) {
 
-        String teamName = "Liones";
+        String teamName1 = "Liones";
 
         int player1kills1 = 5;
         int player1kills2 = 7;
@@ -13,7 +13,7 @@ public class CounterStrike {
 
         int resultFirstTeam = (player1kills1 + player1kills2 + player1kills3 + player1kills4 + player1kills5)/5;
 
-        String teamName1 = "Tigers";
+        String teamName2 = "Tigers";
 
         int player1kills6 = 7;
         int player1kills7 = 17;
@@ -25,12 +25,7 @@ public class CounterStrike {
 
         boolean resultWin = (resultFirstTeam < resultSecondTeam);
 
-        System.out.println("Перемогла команда " + teamName1 + " набрала " + resultSecondTeam + " очків");
+        System.out.println("Перемогла команда " + teamName2 + " набрала " + resultSecondTeam + " очків");
         System.out.println(resultWin);
-
-
-
-
-
     }
 }
