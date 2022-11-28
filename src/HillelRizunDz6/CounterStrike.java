@@ -1,31 +1,81 @@
 package HillelRizunDz6;
 
+import java.util.Scanner;
+
 public class CounterStrike {
     public static void main(String[] args) {
 
-        String teamName1 = "Liones";
+        Scanner scanner = new Scanner(System.in);
 
-        int player1kills = 5;
-        int player2kills = 7;
-        int player3kills = 2;
-        int player4kills = 8;
-        int player5kills = 4;
+        System.out.println("Enter 1 Team name");
+        String team1name = scanner.nextLine();
+        System.out.println(team1name);
 
-        int resultFirstTeam = (player1kills + player2kills + player3kills + player4kills + player5kills)/5;
+        System.out.println("Enter player 1 kills");
+        int player1Team1 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player1Team1);
 
-        String teamName2 = "Tigers";
+        System.out.println("Enter player 2 kills");
+        int player2Team1 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player2Team1);
 
-        int player6kills = 7;
-        int player7kills = 17;
-        int player8kills = 20;
-        int player9kills = 8;
-        int player10kills = 12;
+        System.out.println("Enter player 3 kills");
+        int player3Team1 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player3Team1);
 
-        int resultSecondTeam = (player6kills + player7kills + player8kills + player9kills + player10kills)/5;
+        System.out.println("Enter player 4 kills");
+        int player4Team1 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player4Team1);
 
-        boolean resultWin = (resultFirstTeam < resultSecondTeam);
+        System.out.println("Enter player 5 kills");
+        int player5Team1 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player5Team1);
 
-        System.out.println("Перемогла команда " + teamName2 + " набрала " + resultSecondTeam + " очків");
-        System.out.println(resultWin);
+        int team1result = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1)/5;
+
+
+        System.out.println("Enter 2 Team name");
+        String team2name = scanner.nextLine();
+        System.out.println(team1name);
+
+        System.out.println("Enter player 1 kills");
+        int player1Team2 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player1Team2);
+
+        System.out.println("Enter player 2 kills");
+        int player2Team2 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player2Team2);
+
+        System.out.println("Enter player 3 kills");
+        int player3Team2 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player3Team2);
+
+        System.out.println("Enter player 4 kills");
+        int player4Team2 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player4Team2);
+
+        System.out.println("Enter player 5 kills");
+        int player5Team2 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(player5Team2);
+
+        int team2result = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2)/5;
+
+
+        if (team1result > team2result) {
+            System.out.println("WIN TEAM " + team1name + " набрала " + team1result + " очків!");
+        }
+        else {
+            System.out.println("WIN TEAM " + team2name + " набрала " + team2result + " очків!");
+        }
     }
 }
