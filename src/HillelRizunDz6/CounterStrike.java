@@ -12,31 +12,32 @@ public class CounterStrike {
         System.out.println(team1name);
 
         System.out.println("Enter player 1 kills");
-        int player1Team1 = scanner.nextInt();
+        double player1Team1 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player1Team1);
 
         System.out.println("Enter player 2 kills");
-        int player2Team1 = scanner.nextInt();
+        double player2Team1 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player2Team1);
 
         System.out.println("Enter player 3 kills");
-        int player3Team1 = scanner.nextInt();
+        double player3Team1 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player3Team1);
 
         System.out.println("Enter player 4 kills");
-        int player4Team1 = scanner.nextInt();
+        double player4Team1 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player4Team1);
 
         System.out.println("Enter player 5 kills");
-        int player5Team1 = scanner.nextInt();
+        double player5Team1 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player5Team1);
 
-        int team1result = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1)/5;
+        double team1result;
+        team1result = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1)/5;
 
 
         System.out.println("Enter 2 Team name");
@@ -44,37 +45,41 @@ public class CounterStrike {
         System.out.println(team1name);
 
         System.out.println("Enter player 1 kills");
-        int player1Team2 = scanner.nextInt();
+        double player1Team2 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player1Team2);
 
         System.out.println("Enter player 2 kills");
-        int player2Team2 = scanner.nextInt();
+        double player2Team2 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player2Team2);
 
         System.out.println("Enter player 3 kills");
-        int player3Team2 = scanner.nextInt();
+        double player3Team2 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player3Team2);
 
         System.out.println("Enter player 4 kills");
-        int player4Team2 = scanner.nextInt();
+        double player4Team2 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player4Team2);
 
         System.out.println("Enter player 5 kills");
-        int player5Team2 = scanner.nextInt();
+        double player5Team2 = scanner.nextDouble();
         scanner.nextLine();
         System.out.println(player5Team2);
 
-        int team2result = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2)/5;
+        double team2result;
+        team2result = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2)/5;
 
 
         if (team1result > team2result) {
             System.out.println("WIN TEAM " + team1name + " набрала " + team1result + " очків!");
         }
-        else {
+        if (team1result == team2result) {
+            System.out.println("Нічия!");
+        }
+        if (team2result > team1result){
             System.out.println("WIN TEAM " + team2name + " набрала " + team2result + " очків!");
         }
     }
