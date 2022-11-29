@@ -42,7 +42,7 @@ public class CounterStrike {
 
         System.out.println("Enter 2 Team name");
         String team2name = scanner.nextLine();
-        System.out.println(team1name);
+        System.out.println(team2name);
 
         System.out.println("Enter player 1 kills");
         double player1Team2 = scanner.nextDouble();
