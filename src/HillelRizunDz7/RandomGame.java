@@ -1,4 +1,4 @@
-package HillelRizunDz8;
+package HillelRizunDz7;
 
 import java.util.Random;
 import java.util.Scanner;

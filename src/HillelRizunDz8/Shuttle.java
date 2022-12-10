@@ -1,4 +1,4 @@
-package HillelRizunDz7;
+package HillelRizunDz8;
 
 public class Shuttle {
 
@@ -25,5 +25,3 @@ public class Shuttle {
         }
     }
 }
-
-
