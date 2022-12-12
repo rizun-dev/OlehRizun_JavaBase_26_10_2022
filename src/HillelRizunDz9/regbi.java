@@ -1,7 +1,6 @@
 package HillelRizunDz9;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 public class regbi {
 
@@ -15,23 +14,23 @@ public class regbi {
 
         int[] team1 = new int [25];
         int[] team2 = new int [25];
-        int sum = 0;
         int sum1 = 0;
-        double total = 0;
+        int sum2 = 0;
+        double total1 = 0;
         double total2 = 0;
 
         for (int i = 0; i < team1.length; i++) {
             team1[i] = (int) (Math.random() * 22 + 18);
-            total = sum += team1[i];
+            total1 = sum1 += team1[i];
         }
         System.out.println("\n" + "Team1");
         System.out.print(Arrays.toString(team1));
-        System.out.println("\n" + total);
-        System.out.println(total / team1.length);
+        System.out.println("\n" + total1);
+        System.out.println(total1 / team1.length);
 
         for (int j = 0; j < team2.length; j++) {
             team2[j] = (int) (Math.random() * 22 + 18);
-            total2 = sum1 += team2[j];
+            total2 = sum2 += team2[j];
         }
         System.out.println("\n" + "Team2");
         System.out.print(Arrays.toString(team2));
