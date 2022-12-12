@@ -28,9 +28,9 @@ public class Lottery {
 
         for (int i = 0; i < compNumber.length; i++) {
             compNumber[i] = (int) (Math.random() * 9);
-            for (int j = 0; j < humanNumber.length; j++) {
-                humanNumber[j] = (int) (Math.random() * 9);
-            }
+        }
+        for (int j = 0; j < humanNumber.length; j++) {
+            humanNumber[j] = (int) (Math.random() * 9);
         }
 
         System.out.println("Machine number");
