@@ -19,7 +19,7 @@ import java.util.Scanner;
                 num = scanner.nextInt();
             } else {
                 System.out.println("Wrong action. Try again.");
-                scanner.next();//рекурсия
+                scanner.next();
                 num = getInt();
             }
             return num;
@@ -32,7 +32,7 @@ import java.util.Scanner;
                 operation = scanner.next().charAt(0);
             } else {
                 System.out.println("Wrong action. Try again.");
-                scanner.next();//рекурсия
+                scanner.next();
                 operation = getOperation();
             }
             return operation;
@@ -55,7 +55,7 @@ import java.util.Scanner;
                     break;
                 default:
                     System.out.println("Operation not recognise. Try again");
-                    result = calc(num1, num2, getOperation());//рекурсия
+                    result = calc(num1, num2, getOperation());
             }
             return result;
         }
