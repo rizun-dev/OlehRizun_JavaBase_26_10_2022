@@ -2,7 +2,7 @@ package HillelRizunDz9;
 
 import java.util.Arrays;
 
-public class regbi {
+public class Regbi {
 
     public static void main(String[] args) {
 
@@ -20,7 +20,7 @@ public class regbi {
         double total2 = 0;
 
         for (int i = 0; i < team1.length; i++) {
-            team1[i] = (int) (Math.random() * 22 + 18);
+            team1[i] = (int) (Math.random() * 22 + 19);
             total1 = sum1 += team1[i];
         }
         System.out.println("\n" + "Team1");
@@ -29,7 +29,7 @@ public class regbi {
         System.out.println(total1 / team1.length);
 
         for (int j = 0; j < team2.length; j++) {
-            team2[j] = (int) (Math.random() * 22 + 18);
+            team2[j] = (int) (Math.random() * 22 + 19);
             total2 = sum2 += team2[j];
         }
         System.out.println("\n" + "Team2");

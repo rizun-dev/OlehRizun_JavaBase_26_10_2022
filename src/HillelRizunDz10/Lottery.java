@@ -21,25 +21,26 @@ public class Lottery {
 //
 //        Кількість збігів: 3
 
-        int[] compNumber = {1, 2, 3, 4, 5, 6, 7};
-        int[] humanNumber = new int [compNumber.length];
+        int [] compNumber = new int [7];
+        int [] humanNumber = new int [7];
         int counterOfMatch = 0;
 
-
         for (int i = 0; i < compNumber.length; i++) {
-            compNumber[i] = (int) (Math.random() * 9);
+            compNumber[i] = (int) (Math.random() * 10);
         }
         for (int j = 0; j < humanNumber.length; j++) {
-            humanNumber[j] = (int) (Math.random() * 9);
+            humanNumber[j] = (int) (Math.random() * 10);
         }
+        Arrays.sort(compNumber);
+        System.out.println("Machine number" + "\n" + Arrays.toString(compNumber) );
+        Arrays.sort(humanNumber);
+        System.out.println("\n" + "Player number" + "\n" + Arrays.toString(humanNumber));
 
-        System.out.println("Machine number");
-            System.out.print(Arrays.toString(compNumber));
-        System.out.println("\n" + "Player number");
-            System.out.print(Arrays.toString(humanNumber));
-
-
-        System.out.println("\n" + counterOfMatch);
-
+        for (int i = 0; i < 7; i++) {
+            if (compNumber [i] == humanNumber[i]){
+                counterOfMatch++;
+            }
+        }
+        System.out.println("\n" + "Match: " + counterOfMatch);
     }
 }
