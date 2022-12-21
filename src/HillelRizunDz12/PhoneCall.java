@@ -27,9 +27,9 @@ public class PhoneCall {
 }
 
 class Person {
-    public void personInfo(String firstName, String secondName, String city, String phoneNumber) {
+    public String personInfo(String firstName, String secondName, String city, String phoneNumber) {
         System.out.println("Зателефонувати громадянинові " + firstName + secondName + "з міста " + city + ", "
                 + "можна за номером " + phoneNumber);
-
+        return firstName;
     }
 }
