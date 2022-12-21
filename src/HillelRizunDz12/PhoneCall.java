@@ -14,22 +14,18 @@ public class PhoneCall {
 //              c. Зателефонувати до громадян Sherlock Holmes з міста London можна за номером 37742123513.
 
     public static void main(String[] args) {
+        Person person = new Person();
 
-        Person first = new Person();
-        first.personInfo("Sherlock ", "Holmes ", "London", "2936729462846");
-
-        Person second = new Person();
-        second.personInfo("John", "Watson ", "London", "12312412412");
-
-        Person third = new Person();
-        third.personInfo("Oleh ", "Rizun ", "Ukraine", "380680272592");
+        System.out.println(person.personInfo("Sherlock ", "Holmes ", "London", "2936729462846"));
+        System.out.println(person.personInfo("John ", "Watson ", "London", "12312412412"));
+        System.out.println(person.personInfo("Oleh ", "Rizun ", "Ukraine", "380680272592"));
     }
 }
 
 class Person {
     public String personInfo(String firstName, String secondName, String city, String phoneNumber) {
-        System.out.println("Зателефонувати громадянинові " + firstName + secondName + "з міста " + city + ", "
-                + "можна за номером " + phoneNumber);
-        return firstName;
+        return "Зателефонувати громадянинові " + firstName + secondName + "з міста " + city + ", "
+                + "можна за номером " + phoneNumber;
     }
 }
+
