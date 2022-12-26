@@ -15,7 +15,8 @@ public class BurgerClass {
             this.salad = salad;
             this.mayonnaise = mayonnaise;
             if (!bun.equals("bun") || !meat.equals("meat") || !cheese.equals("cheese") || !salad.equals("salad") || !mayonnaise.equals("mayonnaise")) {
-                System.out.println("This burger is failed. Remake it using proper ingredients and according to the order: bun, meat, cheese, salad, mayonnaise");
+                System.out.println("This burger is failed. Remake it using proper ingredients and according to the order: bun, meat, cheese, "
+                        + "salad, mayonnaise");
             } else {
                 System.out.println("This burger consists of a bun, a meat, a cheese, a salad and a mayonnaise.");
             }
@@ -30,7 +31,8 @@ public class BurgerClass {
             this.secondMeat = secondMeat;
             if (!bun.equals("bun") || !meat.equals("meat") || !cheese.equals("cheese") || !salad.equals("salad") || !mayonnaise.equals("mayonnaise")
                     || !secondMeat.equals("second meat")) {
-                System.out.println("This burger is failed. Remake it using proper ingredients and according to the order: bun, meat, cheese, salad, mayonnaise, second meat");
+                System.out.println("This burger is failed. Remake it using proper ingredients and according to the order: bun, meat, cheese, salad, "
+                        + "mayonnaise, second meat");
             } else {
                 System.out.println("This burger consists of a bun, a meat, a cheese, a second meat, a salad and a mayonnaise.");
             }
