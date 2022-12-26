@@ -26,20 +26,3 @@ public class Burger {
         BurgerClass doubleMac = new BurgerClass(bun, meat, cheese, salad, mayonnaise, secondMeat);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
