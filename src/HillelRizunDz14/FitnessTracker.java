@@ -30,7 +30,16 @@ public class FitnessTracker {
         int currentYear = 2020;
         this.age = currentYear - this.yearOfBirth;
     }
-
+    public void printAccountInfo() {
+        System.out.format("User's name: %s %s\n", this.getName(), this.getSurname());
+        System.out.format("Birthdate: %d-%d-%d, years: %d\n", this.getDayOfBirth(), this.getMonthOfBirth(), this.getYearOfBirth(), this.getAge());
+        System.out.format("Email: %s\n", this.getEmail());
+        System.out.format("Phone number: %s\n", this.getPhoneNumber());
+        System.out.format("Weight: %.1f\n", this.getWeight());
+        System.out.format("Blood pressure: %s\n", this.getBloodPressure());
+        System.out.format("Steps per day: %d\n", this.getStepsPerDay());
+        System.out.println();
+    }
     public String getName() {
         return name;
     }
@@ -83,22 +92,9 @@ public class FitnessTracker {
         this.bloodPressure = bloodPressure;
     }
 
-    public void setStepsPerDay(int stepsPerDay) {
-        this.stepsPerDay = stepsPerDay;
-    }
+    public void setStepsPerDay(int stepsPerDay) { this.stepsPerDay = stepsPerDay; }
 
     public int getAge() {
         return age;
-    }
-
-    public void printAccountInfo() {
-        System.out.format("User's name: %s %s\n", this.getName(), this.getSurname());
-        System.out.format("Birthdate: %d-%d-%d, years: %d\n", this.getDayOfBirth(), this.getMonthOfBirth(), this.getYearOfBirth(), this.getAge());
-        System.out.format("Email: %s\n", this.getEmail());
-        System.out.format("Phone number: %s\n", this.getPhoneNumber());
-        System.out.format("Weight: %.1f\n", this.getWeight());
-        System.out.format("Blood pressure: %s\n", this.getBloodPressure());
-        System.out.format("Steps per day: %d\n", this.getStepsPerDay());
-        System.out.println();
     }
 }
