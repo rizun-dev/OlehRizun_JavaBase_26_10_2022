@@ -30,6 +30,7 @@ public class FitnessTracker {
         int currentYear = 2020;
         this.age = currentYear - this.yearOfBirth;
     }
+
     public void printAccountInfo() {
         System.out.format("User's name: %s %s\n", this.getName(), this.getSurname());
         System.out.format("Birthdate: %d-%d-%d, years: %d\n", this.getDayOfBirth(), this.getMonthOfBirth(), this.getYearOfBirth(), this.getAge());
@@ -40,6 +41,7 @@ public class FitnessTracker {
         System.out.format("Steps per day: %d\n", this.getStepsPerDay());
         System.out.println();
     }
+
     public String getName() {
         return name;
     }
@@ -92,7 +94,9 @@ public class FitnessTracker {
         this.bloodPressure = bloodPressure;
     }
 
-    public void setStepsPerDay(int stepsPerDay) { this.stepsPerDay = stepsPerDay; }
+    public void setStepsPerDay(int stepsPerDay) {
+        this.stepsPerDay = stepsPerDay;
+    }
 
     public int getAge() {
         return age;

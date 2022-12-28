@@ -2,8 +2,14 @@ package HillelRizunDz3;
 import java.util.Scanner;
 
     public class Calculator {
-        static Scanner scanner = new Scanner(System.in);
 
+//        Встановити Git
+//        Ініціалізувати репозиторій у папці з будь-яким файлом
+//        Створити віддалений репозиторій та прив'язати його до локального. Назва репозиторію - "Ваше прізвище+курс+дата створення". Робіть його публічним
+//        Запушити репозиторій у хмару
+//        Внести зміни до локального репозиторії
+//        Запушити зміни на хмару
+        public static Scanner scanner = new Scanner(System.in);
         public static void main(String[] args) {
             int num1 = getInt();
             int num2 = getInt();
