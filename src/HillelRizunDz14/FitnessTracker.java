@@ -1,32 +1,33 @@
 package HillelRizunDz14;
 
 public class FitnessTracker {
-
     private final String name;
     private final int dayOfBirth;
     private final int monthOfBirth;
     private final int yearOfBirth;
     private final String email;
     private final String phoneNumber;
+    private final int age;
     private String surname;
     private double weight;
     private String bloodPressure;
     private int stepsPerDay;
-    private final int age;
 
     public FitnessTracker(String name, String surname, int dayOfBirth, int monthOfBirth,
                           int yearOfBirth, String email, String phoneNumber,
                           double weight, String bloodPressure, int stepsPerDay) {
         this.name = name;
-        this.surname = surname;
         this.dayOfBirth = dayOfBirth;
         this.monthOfBirth = monthOfBirth;
         this.yearOfBirth = yearOfBirth;
         this.email = email;
         this.phoneNumber = phoneNumber;
+
+        this.surname = surname;
         this.weight = weight;
         this.bloodPressure = bloodPressure;
         this.stepsPerDay = stepsPerDay;
+
         int currentYear = 2020;
         this.age = currentYear - this.yearOfBirth;
     }
@@ -42,6 +43,7 @@ public class FitnessTracker {
         System.out.println();
     }
 
+    //    Незмінні
     public String getName() {
         return name;
     }
@@ -66,39 +68,40 @@ public class FitnessTracker {
         return phoneNumber;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    //    Змінювані
     public String getSurname() {
         return surname;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public String getBloodPressure() {
-        return bloodPressure;
-    }
-
-    public int getStepsPerDay() {
-        return stepsPerDay;
     }
 
     public void setSurname(String surname) {
         this.surname = surname;
     }
 
+    public double getWeight() {
+        return weight;
+    }
+
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public String getBloodPressure() {
+        return bloodPressure;
     }
 
     public void setBloodPressure(String bloodPressure) {
         this.bloodPressure = bloodPressure;
     }
 
-    public void setStepsPerDay(int stepsPerDay) {
-        this.stepsPerDay = stepsPerDay;
+    public int getStepsPerDay() {
+        return stepsPerDay;
     }
 
-    public int getAge() {
-        return age;
+    public void setStepsPerDay(int stepsPerDay) {
+        this.stepsPerDay = stepsPerDay;
     }
 }

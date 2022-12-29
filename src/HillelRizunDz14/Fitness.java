@@ -32,9 +32,17 @@ public class Fitness {
                 2000, "myroslavaRizun@gmail.com", "+380979804212,",
                 54.0, "90/80", 8000);
 
-        FitnessTracker yaroslav = new FitnessTracker("Yaroslav", "Rizun", 16, 10,
+        FitnessTracker yaroslav = new FitnessTracker("Yaroslav", "Rizun", 25, 6,
                 1999, "yaroslavRizun@gmail.com", "+380988576171",
                 65.4, "130/60", 5000);
+
+        FitnessTracker dmytro = new FitnessTracker("Dmytro", "Rizun", 6, 2,
+                1982, "DmytroRizun@gmail.com", "+380988576175",
+                90.2, "105/70", 2000);
+
+        FitnessTracker maria = new FitnessTracker("Maria", "Rizun", 18, 1,
+                1995, "MariayaroslavRizun@gmail.com", "+380988578948",
+                69, "110/82", 15000);
 
         oleh.printAccountInfo();
         myroslava.printAccountInfo();
@@ -53,5 +61,7 @@ public class Fitness {
         oleh.printAccountInfo();
         myroslava.printAccountInfo();
         yaroslav.printAccountInfo();
+        dmytro.printAccountInfo();
+        maria.printAccountInfo();
     }
 }
