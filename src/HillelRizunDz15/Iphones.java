@@ -1,4 +1,4 @@
-package HillelRizunDz16;
+package HillelRizunDz15;
 
 public class Iphones implements Smartphones, IOS {
     @Override

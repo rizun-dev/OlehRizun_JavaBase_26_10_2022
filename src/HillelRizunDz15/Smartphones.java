@@ -1,4 +1,4 @@
-package HillelRizunDz16;
+package HillelRizunDz15;
 
 public interface Smartphones {
     void call();

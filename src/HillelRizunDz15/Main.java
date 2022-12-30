@@ -2,22 +2,25 @@ package HillelRizunDz15;
 
 public class Main {
 
-//    1) Зробіть клас MusicStyles, який міститиме метод playMusic()
-//    2) Зробіть його спадкоємців: PopMusic, RockMusic і ClassicMusic.
-//    3) Спадкоємці повинні реалізовувати метод playMusic().
-//    4) У мейн-класі створіть музичні гурти для кожного стилю
-//    5) За допомогою методу for each викличте у всіх спадкоємців MusicStyles метод playMusic()
+//    Зробіть інтерфейс Smartphones, який має містити методи call(), sms(), internet()
+//    Зробіть класи, які його імплементують: Androids, iPhones.
+//    Андроїди повинні також імплементувати LinuxOS, айфони повинні імплементувати iOS
+//    Створіть екземпляри кожного виду у мейн-класі
 
     public static void main(String[] args) {
+        Androids android = new Androids();
+        Iphones iPhone = new Iphones();
 
-        Player[] styles = {
-                new PopMusic(),
-                new RockMusic(),
-                new ClassicMusic()
-        };
+        android.call();
+        android.internet();
+        android.sms();
+        android.linuxOSAction();
 
-        for (Player group : styles) {
-            group.playMusic();
-        }
+        System.out.println();
+
+        iPhone.call();
+        iPhone.internet();
+        iPhone.sms();
+        iPhone.IOSAction();
     }
 }
