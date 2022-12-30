@@ -8,6 +8,7 @@ public class FitnessTracker {
     private final String email;
     private final String phoneNumber;
     private final int age;
+
     private String surname;
     private double weight;
     private String bloodPressure;
